@@ -17,6 +17,9 @@ public class CargoBox {
      * The list of items currently stored in this CargoBox.
      * This list contains all non-null items that have been added.
      * Invariant: items is never null, and contains no null elements.
+     * 
+     * ArrayList is used to provide dynamic storage for items that can grow
+     * and shrink over the lifetime of a CargoBox object.
      */
     private ArrayList<Item> items;
 
